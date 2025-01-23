@@ -1,0 +1,201 @@
+html
+{
+    height:100%;
+}
+
+body
+{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(50, 154, 103, 0.2); 
+
+}
+
+header
+{
+    background-color: rgb(50, 154, 103); 
+    flex-grow: 0;
+    flex-basis: 120px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    max-height: 15vw;
+
+}
+
+img
+{
+    max-width: 100%;
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+nav
+{
+    display: flex;
+    justify-content: end;
+    gap: 6px;
+    padding: 6px 6px 6px 0;
+    background-color: rgb(17 145 43 / 3%);
+}
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    height: 85%;
+}
+
+.margin-left
+{
+    border-right: white solid 1px;
+}
+
+.margin-right
+{
+    border-left: white solid 1px;
+}
+
+.text
+{
+    color: black;
+    text-align: center;
+    width: 75%;
+    padding: 0 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+.sub-heading
+{
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.link
+{
+    color: white;
+    background-color: rgb(23 118 47);
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+.home
+{
+    background-color: rgb(23 118 47);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+#current-page:hover
+{
+    cursor: pointer;
+    background-color: rgb(23 118 47);
+}
+
+.link:hover
+{
+    background-color: rgba(23, 118, 47, 0.6);
+}
+
+.home:hover
+{
+    background-color: rgba(23, 118, 47, 0.6);
+}
+
+th, td
+{
+    border: black solid 1px;
+    height: 40px;
+}
+
+table
+{
+    width: 100%;
+}
+
+.pay
+{
+    color: red;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 670px) 
+{
+    
+    nav
+    {
+        display: block;
+        padding: 0 6px;
+    }
+
+    .home,.link
+    {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .container
+    {
+        padding: 0;
+    }
+
+    .margin-left,.margin-right
+    {
+        display: none;
+    }
+
+    .text
+    {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 1093px)
+{
+
+    header
+    {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 410px)
+{
+    .text
+    {
+        font-size: 18px;
+    }
+}
