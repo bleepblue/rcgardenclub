@@ -6,99 +6,7 @@
     <title>Rowlands Castle Gardening Club</title>
     <link rel="icon" type="image/x-icon" href="/favicon.jpg">
     <link rel="stylesheet" href="styles.css">
-    <script>
-
-        let dropdownMenu = false;
-        let scheduleMenu = false;
-        let entryMenu = false;
-
-        function dropdown()
-        {
-            if (dropdownMenu)
-                {
-                    document.querySelector(".dropdown-content").style.height="0";
-                    dropdownMenu = false;
-                }
-            else
-                {
-                    document.querySelector(".dropdown-content").style.height="138px";
-                    dropdownMenu = true;
-                }
-            
-            if (document.getElementById("showbtn").className == "show")
-                {
-                    document.getElementById("showbtn").className = "show-selected"
-                }
-            else
-                {
-                    document.getElementById("showbtn").className = "show"
-                }
-
-        }
-
-        function scheduleDropdown()
-        {
-    
-            if (scheduleMenu)
-                {
-                    scheduleMenu = false;
-                    document.querySelector(".schedule-dropdown").style.height="0";
-                    if (entryMenu)
-                        {
-                            document.querySelector(".dropdown-content").style.height="230px";
-                        }
-                    else
-                        {
-                            document.querySelector(".dropdown-content").style.height="138px";
-                        }
-                }
-            else
-                {
-                    scheduleMenu = true;
-                    document.querySelector(".schedule-dropdown").style.height="92px";
-                    if (entryMenu)
-                        {
-                            document.querySelector(".dropdown-content").style.height="322px";
-                        }
-                    else
-                        {
-                            document.querySelector(".dropdown-content").style.height="230px";
-                        }
-                }
-        }
-
-        function entryDropdown()
-        {
-
-            if (entryMenu)
-                {
-                    entryMenu = false;
-                    document.querySelector(".entry-dropdown").style.height="0";
-                    if (scheduleMenu)
-                        {
-                            document.querySelector(".dropdown-content").style.height="230px";
-                        }
-                    else
-                        {
-                            document.querySelector(".dropdown-content").style.height="138px";
-                        }
-                }
-            else
-                {
-                    entryMenu = true;
-                    document.querySelector(".entry-dropdown").style.height="92px";
-                    if (scheduleMenu)
-                        {
-                            document.querySelector(".dropdown-content").style.height="322px";
-                        }
-                    else
-                        {
-                            document.querySelector(".dropdown-content").style.height="230px";
-                        }
-                }
-
-        }
-    </script>
+    <script src="javascript.js"></script>
 </head>
 <body>
     <header>
@@ -122,18 +30,18 @@
             </a>
             
             <div>
-                <div class="show" id="showbtn" onclick="dropdown()">Spring Show &#9660;</div>
+                <div class="show" onclick="dropdown()">Spring Show &#128899;</div>
                 <div class="dropdown-content">
-                    <a href="/springShow/showInfo.html"><div class="sub-link">Info</div></a>      
-                    <div class="sub-link schedule" onclick="scheduleDropdown()">Schedule &#9660;</div>
+                    <a href="/springShow/SpringShow.html"><div class="sub-link">Info</div></a>      
+                    <div class="sub-link schedule" onclick="scheduleDropdown()"><span>Schedule</span> <span>&#128899;</span></div>
                     <div class="schedule-dropdown">
-                        <div class="sub-sub-link">View</div>
-                        <div class="sub-sub-link">Download</div>
+                        <a href="./springShow/ShowSchedule.html"><div class="sub-sub-link">View</div></a>
+                        <a href="./springShow/Spring_Show_Schedule.docx" download><div class="sub-sub-link">Download</div></a>
                     </div>
-                    <div class="sub-link" onclick="entryDropdown()">Entry Form &#9660;</div>
+                    <div class="sub-link entry" onclick="entryDropdown()">Entry Form &#128899;</div>
                     <div class="entry-dropdown">
-                        <div class="sub-sub-link">View</div>
-                        <div class="sub-sub-link">Download</div>
+                        <a href="./springShow/ShowEntry.html"><div class="sub-sub-link">View</div></a>
+                        <a href="./springShow/Spring_Show_Entry_Form.docx" download><div class="sub-sub-link">Download</div></a>
                     </div>
                 </div>
             </div>

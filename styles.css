@@ -14,6 +14,12 @@ body
 
 }
 
+.schedule
+{
+    display: flex;
+    justify-content: space-around;
+}
+
 header
 {
     background-color: rgb(50, 154, 103); 
@@ -71,17 +77,6 @@ nav
     height: 0px;
 }
 
-.unfurl
-{
-    height: 150px;
-}
-
-.sub-unfurl
-{
-    height: 80px;
-}
-
-
 
 .container
 {
@@ -109,8 +104,27 @@ nav
     padding: 0 50px;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    
 
+}
+
+.schedule-container
+{
+    display: flex;
+    color: black;
+    text-align: left;
+    width: 100%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.schedule-left
+{
+    flex-basis: 55%;
+}
+
+.schedule-right
+{
+    flex-basis: 45%;
 }
 
 .sub-heading
@@ -123,6 +137,8 @@ a
 {
     text-decoration: none;
 }
+
+
 
 .show
 {
@@ -143,7 +159,7 @@ a
     cursor: pointer;
 }
 
-.show-selected
+.link-selected
 {
     color: white;
     background-color: rgba(23, 118, 47, 0.6);
@@ -156,7 +172,7 @@ a
     border-radius: 5px;
 }
 
-.show-selected:hover
+.link-selected:hover
 {
     cursor:pointer;
 }
@@ -191,7 +207,27 @@ a
 .sub-link:hover
 {
     background-color: rgba(23, 118, 47, 0.6);
+    cursor: pointer;
 }
+
+.sub-link-selected
+{
+    color: white;
+    background-color: rgba(23, 118, 47, 0.6);
+    width: 180px;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.sub-link-selected:hover
+{
+    cursor: pointer;
+}
+
 
 .sub-sub-link
 {
@@ -209,11 +245,30 @@ a
 .sub-sub-link:hover
 {
     background-color: rgba(23, 118, 47, 0.6);
+    cursor: pointer;
 }
 
-.show, .show-selected, .sub-link, .sub-sub-link
+.sub-sub-link-selected
 {
-    margin-bottom: 6px;
+    color: white;
+    background-color: rgba(23, 118, 47, 0.6);
+    width: 160px;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.sub-sub-link-selected:hover
+{
+    cursor: pointer;
+}
+
+.sub-link, .sub-sub-link, .sub-link-selected, .sub-sub-link-selected
+{
+    margin-top: 6px;
 }
 
 .home
@@ -231,7 +286,13 @@ a
 #current-page:hover
 {
     cursor: pointer;
-    background-color: rgb(23 118 47);
+    
+}
+
+#current-page
+{
+    height: 40px;
+    background-color: rgba(23, 118, 47, 0.6);
 }
 
 .link:hover
@@ -253,12 +314,39 @@ th, td
 table
 {
     width: 100%;
+    text-align: center;
 }
 
 .pay
 {
     color: red;
     text-decoration: underline;
+}
+
+.line
+{
+    border-bottom: black dotted 4px;
+    flex-grow: 6;
+    margin-right: 60px;
+}
+
+.line2
+{
+    border-bottom: black dotted 4px;
+    flex-grow: 1;
+}
+
+.line3
+{
+    border-bottom: black dotted 4px;
+    flex-grow: 3;
+}
+
+.name-container
+{
+    display: flex;
+    margin: 10px 0;
+
 }
 
 @media screen and (max-width: 670px) 
@@ -276,6 +364,13 @@ table
         margin: 6px 0;
     }
 
+    .show, .sub-link, .sub-sub-link, .dropdown-content, .schedule-dropdown, .entry-dropdown, .sub-link-selected, .sub-sub-link-selected
+    {
+        width: 100%;
+        display: block;
+        position: static;
+    }
+
     .container
     {
         padding: 0;
@@ -290,6 +385,18 @@ table
     {
         width: 100%;
         padding: 0 10px;
+    }
+
+    .schedule-container
+    {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .spring-mobile
+    {
+        height: 70%;
     }
 
 

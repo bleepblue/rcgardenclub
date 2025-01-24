@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowlands Castle Gardening Club</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.jpg">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../javascript.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="../banner.jpg"></a>
+    </header>
+    <main>
+        <nav>
+            <a href="/">
+                <div class="home">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
+                        <path d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z" fill="white"></path>
+                    </svg>
+                </div>
+            </a>
+            <a href="../programme.html">
+                <div class="link">Programme</div>
+            </a>
+            <a href="../committee.html">
+                <div class="link">Committee</div>
+            </a>
+            <a href="../membership.html">
+                <div class="link">Membership</div>
+            </a>
+            
+            <div>
+                <div class="show link-selected" onclick="dropdown()">Spring Show &#128899;</div>
+                <div class="dropdown-content" style="height: 138px;">
+                    <div class="sub-link-selected">Info</div>     
+                    <div class="sub-link schedule" onclick="scheduleDropdown()"><span>Schedule</span> <span>&#128899;</span></div>
+                    <div class="schedule-dropdown">
+                        <a href="./ShowSchedule.html"><div class="sub-sub-link">View</div></a>
+                        <a href="./Spring_Show_Schedule.docx" download><div class="sub-sub-link">Download</div></a>
+                    </div>
+                    <div class="sub-link entry" onclick="entryDropdown()">Entry Form &#128899;</div>
+                    <div class="entry-dropdown">
+                        <a href="./ShowEntry.html"><div class="sub-sub-link">View</div></a>
+                        <a href="./Spring_Show_Entry_Form.docx" download><div class="sub-sub-link">Download</div></a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="container spring-mobile">
+            <div class="margin-left"></div>
+            <div class="text">
+                <h2>SPRING SHOW 2025</h2>
+                
+                <p class="sub-heading">St. John's Church Centre</p>
+                <p>120 Redhill Road, Rowlands Castle, PO9 6DF <a href="https://maps.app.goo.gl/jYCnTjkXiHYMrGtn9"><svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 16 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.37892 10.2236L8 16L12.6211 10.2236C13.5137 9.10788 14 7.72154 14 6.29266V6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6V6.29266C2 7.72154 2.4863 9.10788 3.37892 10.2236ZM8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8Z" fill="#000000"/>
+                    </svg></a></p>
+                <h2>Saturday 29th March 2025</h2>
+                <p>Competition Entries 10.00 - 12.00</p>
+                <p>Judging 12.00 - 14.00</p>
+                <p>Public Entry 14.00 - 16.30</p>
+                <p><i>Entries Close 9pm Wednesday 26th March 2025</i></p>
+                <p class="sub-heading">Entry is open to both members and non-members of Rowlands Castle Gardening Club</p>
+                <p>Submit entry forms to:</p>        
+                <p>Fiona Charlesworth, 1 Yardlea Close, Rowlands Castle</p>
+                <p>Cathy Tyrrell, 85A Finchdean Road, Rowlands Castle</p>
+                <p>Show Secretary Catherine Tyrrell</p>
+                <p class="sub-heading">For rules of entry see Entry Form</p>    
+            </div>
+            <div class="margin-right"></div>
+        </div>
+    </main>
+    
+</body>
+<script>
+    dropdownMenu = true;
+</script>
+</html>
+
