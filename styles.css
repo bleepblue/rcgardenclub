@@ -153,12 +153,6 @@ a
     border-radius: 5px;
 }
 
-.show:hover
-{
-    background-color: rgba(23, 118, 47, 0.6);
-    cursor: pointer;
-}
-
 .link-selected
 {
     color: white;
@@ -172,10 +166,6 @@ a
     border-radius: 5px;
 }
 
-.link-selected:hover
-{
-    cursor:pointer;
-}
 
 .link
 {
@@ -204,7 +194,7 @@ a
     border-radius: 5px;
 }
 
-.sub-link:hover
+.link:hover, .home:hover, .sub-link:hover, .sub-sub-link:hover, .show:hover
 {
     background-color: rgba(23, 118, 47, 0.6);
     cursor: pointer;
@@ -223,7 +213,7 @@ a
     border-radius: 5px;
 }
 
-.sub-link-selected:hover
+.link-selected, .sub-link-selected:hover, .sub-sub-link-selected:hover, #current-page:hover
 {
     cursor: pointer;
 }
@@ -242,12 +232,6 @@ a
     border-radius: 5px;
 }
 
-.sub-sub-link:hover
-{
-    background-color: rgba(23, 118, 47, 0.6);
-    cursor: pointer;
-}
-
 .sub-sub-link-selected
 {
     color: white;
@@ -259,11 +243,6 @@ a
     font-size: 24px;
     font-weight: 600;
     border-radius: 5px;
-}
-
-.sub-sub-link-selected:hover
-{
-    cursor: pointer;
 }
 
 .sub-link, .sub-sub-link, .sub-link-selected, .sub-sub-link-selected
@@ -283,25 +262,9 @@ a
 }
 
 
-#current-page:hover
-{
-    cursor: pointer;
-    
-}
-
 #current-page
 {
     height: 40px;
-    background-color: rgba(23, 118, 47, 0.6);
-}
-
-.link:hover
-{
-    background-color: rgba(23, 118, 47, 0.6);
-}
-
-.home:hover
-{
     background-color: rgba(23, 118, 47, 0.6);
 }
 
