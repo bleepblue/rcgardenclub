@@ -14,6 +14,10 @@
                     document.querySelector(".entry-dropdown").style.height="0";
                     document.querySelector(".show").classList.remove("link-selected");
                     document.querySelector(".show").classList.add("link");
+                    document.querySelector(".schedule").classList.remove("sub-link-selected");
+                    document.querySelector(".schedule").classList.add("sub-link");
+                    document.querySelector(".entry").classList.remove("sub-link-selected");
+                    document.querySelector(".entry").classList.add("sub-link");
                 }
             else
                 {
