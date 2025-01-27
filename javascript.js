@@ -17,8 +17,8 @@
             document.querySelector(".schedule").classList.add("sub-link");
             document.querySelector(".entry").classList.remove("sub-link-selected");
             document.querySelector(".entry").classList.add("sub-link");
-            document.cookie = "entry=false";
-            document.cookie = "schedule=false";
+            document.cookie = "entry=false; path=/;";
+            document.cookie = "schedule=false; path=/;";
         }
 
         function openDropdown()
@@ -43,7 +43,7 @@
                 }
             document.querySelector(".schedule").classList.remove("sub-link-selected");
             document.querySelector(".schedule").classList.add("sub-link");
-            document.cookie = "schedule=false";
+            document.cookie = "schedule=false; path=/;";
         }
 
         function openSchedule()
@@ -60,7 +60,7 @@
                 }
             document.querySelector(".schedule").classList.add("sub-link-selected");
             document.querySelector(".schedule").classList.remove("sub-link");
-            document.cookie = "schedule=true";
+            document.cookie = "schedule=true; path=/;";
         }
 
         function closeEntry()
@@ -77,7 +77,7 @@
                         }
                     document.querySelector(".entry").classList.remove("sub-link-selected");
                     document.querySelector(".entry").classList.add("sub-link");
-                    document.cookie = "entry=false";
+                    document.cookie = "entry=false; path=/;";
         }
 
         function openEntry()
@@ -94,7 +94,7 @@
                 }
             document.querySelector(".entry").classList.add("sub-link-selected");
             document.querySelector(".entry").classList.remove("sub-link");
-            document.cookie = "entry=true";   
+            document.cookie = "entry=true; path=/;";   
         }
 
         function checkMenu ()
@@ -110,7 +110,7 @@
             menuList.forEach(menu=>{
                 if(menu[0].match("entry"))
                 {
-                    if(menu[1])
+                    if(menu[1] == "true")
                     {
                         if(!entryMenu)
                         {
@@ -122,7 +122,7 @@
                 }
                 else if(menu[0].match("schedule"))
                 {
-                    if(menu[1])
+                    if(menu[1] == "true")
                     {
                         if(!scheduleMenu)
                         {
