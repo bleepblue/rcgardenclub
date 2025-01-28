@@ -19,12 +19,12 @@ body
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-right: 10%;
+    padding-right: 7%;
 }
 
 .schedule
 {
-    padding-left: 10%;
+    padding-left: 7%;
 }
 
 
@@ -167,7 +167,7 @@ a
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-right: 10%;
+    padding-right: 7%;
 }
 
 .link-selected
@@ -456,12 +456,12 @@ table
 {
     .show
     {
-        padding: 0 22%;
+        padding: 0 27%;
     }
 
     .schedule, .entry
     {
-        padding: 0 15%;
+        padding: 0 21%;
     }
 }
 
@@ -471,5 +471,15 @@ table
     .text
     {
         font-size: 18px;
+    }
+
+    .show
+    {
+        padding: 0 22%;
+    }
+
+    .schedule, .entry
+    {
+        padding: 0 15%;
     }
 }
