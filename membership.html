@@ -22,7 +22,7 @@
             </svg>
         </div>
         
-        <nav>
+        <nav id="nav">
             <a href="/">
                 <div class="home">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
@@ -30,51 +30,47 @@
                     </svg>
                 </div>
             </a>
-            <a href="programme.html">
+            <a href="../programme.html">
                 <div class="link">Programme</div>
             </a>
-            <a href="/committee.html">
+            <a href="../committee.html">
                 <div class="link">Committee</div>
             </a>
-                <div class="link" id="current-page">Membership</div>
+            <a href="../membership.html">
+                <div class="link">Membership</div>
+            </a>
 
-                <div>
-                    <div class="show" onclick="dropdown()">
-                        <div class="menu-text">Spring Show</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+            <div>
+                <div class="link" id="show" onclick="dropdown()">
+                    <div class="menu-text" id="hort">Horticultural Show</div>
+                    <svg id="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                        <polygon points="0,18 16,18 8,28" fill="white"></polygon>
+                    </svg>
+
+                </div>
+                <div class="dropdown-content">
+                    <a href="./summerShow/horticulturalShow.html"><div class="sub-link">Info</div></a>
+
+                    <a href="./summerShow/ShowSchedule.html"><div class="sub-link">Schedule</div></a>
+                        
+
+                   
+                    <div class="sub-link entry" onclick="entryDropdown()">
+                        <div class="menu-text">Downloads</div>
+                        <svg style="margin-right: -7px" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                             <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                         </svg>
-    
                     </div>
-                    <div class="dropdown-content">
-                        <a href="./springShow/SpringShow.html"><div class="sub-link">Info</div></a>      
-                        <div class="sub-link schedule" onclick="scheduleDropdown()"><div class="menu-text">Schedule</div> 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
-                                <polygon points="0,18 16,18 8,28" fill="white"></polygon>
-                            </svg>
-                        </div>
-    
-                        <div class="schedule-dropdown">
-                            <a href="./springShow/ShowSchedule.html"><div class="sub-sub-link">View</div></a>
-                            <a href="./springShow/Spring_Show_Schedule.docx" download><div class="sub-sub-link">Download</div></a>
-                        </div>
-    
-                        <div class="sub-link entry" onclick="entryDropdown()">
-                            <div class="menu-text">Entry Form</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
-                                <polygon points="0,18 16,18 8,28" fill="white"></polygon>
-                            </svg>
-                        </div>
-                        
-                        <div class="entry-dropdown">
-                            <a href="./springShow/ShowEntry.html"><div class="sub-sub-link">View</div></a>
-                            <a href="./springShow/Spring_Show_Entry_Form.docx" download><div class="sub-sub-link">Download</div></a>
-                        </div>
+                    
+                    <div class="entry-dropdown">
+                        <a href="summerShow/entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
+                        <a href="summerShow/garden_show.pdf" download><div class="sub-sub-link">Garden Show</div></a>
                     </div>
                 </div>
-
+            </div>
+            
         </nav>
-        <div class="container">
+            <div class="container">
             <div class="margin-left"></div>
             <div class="text">
                 <h2>Rowlands Castle Gardening Club Membership 2025</h2>

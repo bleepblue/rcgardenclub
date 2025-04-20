@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rowlands Castle Gardening Club</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.jpg">
-    <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
+    <link rel="icon" type="image/x-icon" href="../favicon.jpg">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../javascript.js"></script>
+    <style>
+       
+        a
+        {
+            
+            color: black;
+        }
+    </style>
 </head>
-<body>
+<body id="hort-body">
     <header>
-        <img src="banner.jpg">
+        <a href="/"><img src="../banner.jpg"></a>
     </header>
     <main>
 
@@ -22,7 +30,7 @@
             </svg>
         </div>
         
-        <nav id="nav">
+        <nav id="nav-hort">
             <a href="/">
                 <div class="home">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
@@ -41,17 +49,17 @@
             </a>
 
             <div>
-                <div class="link" id="show" onclick="dropdown()">
+                <div class="link-selected" id="show" onclick="dropdown()">
                     <div class="menu-text" id="hort">Horticultural Show</div>
                     <svg id="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                         <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                     </svg>
 
                 </div>
-                <div class="dropdown-content">
-                    <a href="./summerShow/horticulturalShow.html"><div class="sub-link">Info</div></a>
+                <div class="dropdown-content" style="height: 230px;">
+                    <a href="./horticulturalShow.html"><div class="sub-link-selected">Info</div></a>
 
-                    <a href="./summerShow/ShowSchedule.html"><div class="sub-link">Schedule</div></a>
+                    <a href="./ShowSchedule.html"><div class="sub-link">Schedule</div></a>
                         
 
                    
@@ -63,39 +71,42 @@
                     </div>
                     
                     <div class="entry-dropdown">
-                        <a href="summerShow/entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
-                        <a href="summerShow/garden_show.pdf" download><div class="sub-sub-link">Garden Show</div></a>
+                        <a href="entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
+                        <a href="garden_show.pdf" download><div class="sub-sub-link">Garden Show</div></a>
                     </div>
                 </div>
             </div>
             
         </nav>
-        <div class="container">
-            <div class="margin-left"></div>
-            <div class="text">
-                <h2>Welcome to Rowlands Castle Gardening Club!</h2>
-                <p>We are a local club with about 80 members, based in Rowlands Castle, Hampshire, UK.</p>
-                <p class="sub-heading">Activities</p>
-                <p>Talks by carefully selected speakers on a range of topics of interest to gardeners. 
-                    These take place in St. John's Church Centre 7.30pm on the 4th Monday  of each month from September 
-                    to April (except December). Non-members are welcome at these meetings (£5 per head).</p>
-                <p>Spring Flower Show in late March or early April — open to all with free entry for exhibits and £1 on the door. 
-                    A friendly show to brighten the early Spring! Includes a sale of perennial plants and tea, coffee and cakes.</p>
-                <p>We have visits to gardens of interest. In 2025 there are four visits planned (for members only).</p>
-                <p>An informal Garden Party in a member's garden.</p>
-                <p>We also participate in other gardening related activities such as the 
-                    PeCAN tree scheme and local initiatives to enhance our environment.</p>
-                <p class="sub-heading">Membership</p>
-                <p>Annual membership runs from January to December each year and costs £20 per head.</p>                
+        <img src="topImage.png" id="top-image">
+        
+        <div id="hort-container">
+            <img id="title" src="title.png">
+            <div id="hort-content">
+               
+                <h1 id="hort-text-1">Saturday 5th July 2025</h1>
+                <h2 id="hort-text-2">This year the horticultural show will be organised by the Rowlands Castle Gardening Club and its enthusiastic members</h2>
+                <p id="hort-text-3">
+                    It's that time again... and don't forget, this year 
+                    the horticultural show will be in the <span id="parish"><a href="https://maps.app.goo.gl/NLtiKFpQpnJ1QayS7" target="_blank">parish hall</a></span> 
+                    so take some time to see if you can enter into 
+                    any of the categories of the show, and if not, 
+                    just come along, have fun and help make it 
+                    another fantastic day.
+                </p>
             </div>
-            <div class="margin-right"></div>
+           
         </div>
+        
+        <div id="bottom-image">
+            <img src="flowerImage.png"  >
+        </div>
+        
     </main>
     
 </body>
 <script>
-    document.cookie = "entry=false; path=/;";
-    document.cookie = "schedule=false; path=/;";
+    dropdownMenu = true;
 </script>
 </html>
 

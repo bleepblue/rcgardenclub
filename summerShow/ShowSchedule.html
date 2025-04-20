@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowlands Castle Gardening Club</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.jpg">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../javascript.js"></script>
+</head>
+<body id="hort-body">
+    <header>
+        <a href="/"><img src="../banner.jpg"></a>
+    </header>
+    <main>
+
+        <div class="small-screen-menu" onclick="menuDropdown()">
+            <svg height="40" width="40" class="trigram">
+                <rect fill="rgb(23 118 47)" width="34" height="6" x="3" y="7" rx="3" ry="3"></rect>
+                <rect fill="rgb(23 118 47)" width="34" height="6" x="3" y="17" rx="3" ry="3"></rect>
+                <rect fill="rgb(23 118 47)" width="34" height="6" x="3" y="27" rx="3" ry="3"></rect>
+            </svg>
+        </div>
+        
+        <nav id="nav-hort">
+            <a href="/">
+                <div class="home">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
+                        <path d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z" fill="white"></path>
+                    </svg>
+                </div>
+            </a>
+            <a href="../programme.html">
+                <div class="link">Programme</div>
+            </a>
+            <a href="../committee.html">
+                <div class="link">Committee</div>
+            </a>
+            <a href="../membership.html">
+                <div class="link">Membership</div>
+            </a>
+
+            <div>
+                <div class="link-selected" id="show" onclick="dropdown()">
+                    <div class="menu-text" id="hort">Horticultural Show</div>
+                    <svg id="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                        <polygon points="0,18 16,18 8,28" fill="white"></polygon>
+                    </svg>
+
+                </div>
+                <div class="dropdown-content" style="height: 230px;">
+                    <a href="./horticulturalShow.html"><div class="sub-link-selected">Info</div></a>
+
+                    <a href="./ShowSchedule.html"><div class="sub-link">Schedule</div></a>
+                        
+
+                   
+                    <div class="sub-link entry" onclick="entryDropdown()">
+                        <div class="menu-text">Downloads</div>
+                        <svg style="margin-right: -7px" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                            <polygon points="0,18 16,18 8,28" fill="white"></polygon>
+                        </svg>
+                    </div>
+                    
+                    <div class="entry-dropdown">
+                        <a href="entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
+                        <a href="garden_show.pdf" download><div class="sub-sub-link">Garden Show</div></a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+
+
+        <img src="topImage.png" id="top-image-schedule">
+        
+        <div id="schedule-content">
+            
+            <div class="schedule-section">
+                <div class="schedule-heading"><span class="division">Division A</span> — Fruit, Vegetables and Flowers</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>Five potatoes on a plate</li>
+                            <li>Three carrots</li>
+                            <li>Three onions</li>
+                            <li>Three beetroot</li>
+                            <li>One lettuce</li>
+                            <li>Six pea pods</li>
+                            <li>Five broad beans</li>
+                            <li>Three stalks of rhubarb</li>
+                            <li>Vase of mixed herbs</li>
+                            <li>Plate of mixed fruit</li>
+                            <li>Basket of garden produce</li>
+                            <li>One specimen rose</li>
+                            <li>Three roses in a vase</li>
+                            <li>One stemmed floribunda</li>
+                            <li>Vase of mixed garden flowers</li>
+                            <li>Vase of mixed foliage</li>
+                            <li>Vase of sweet peas</li>
+                            <li>Flower heads</li>
+                            <li>Any plant(s) in an unusual container</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note">
+                        <ol>
+                            <li>(white or coloured)</li>
+                            <li>(with 7.5cm of tops)</li>
+                            <li>(with 7.5cm of tops)</li>
+                            <li>(with 7.5cm of tops)</li>
+                            <li>(with roots)</li>
+                            <li>(on a plate)</li>
+                            <li>(on a plate)</li>
+                            <li>(without leaves)</li>
+                            <li class="empty-note">—</li>
+                            <li class="empty-note">—</li>
+                            <li>(up to 45cm)</li>
+                            <li class="empty-note">—</li>
+                            <li>(any variety)</li>
+                            <li>(not a rambler)</li>
+                            <li class="empty-note">—</li>
+                            <li class="empty-note">—</li>
+                            <li class="empty-note">—</li>
+                            <li>(on a plate/saucer)</li>
+                            <li>(must be growing in the container - no larger than 45cm)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-section">
+                <div class="schedule-heading"><span class="division">Division B</span> — Floral Art</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>VE Day</li>
+                            <li>Arrangement of flowers from garden</li>
+                            <li>Petite in a wine glass</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note">
+                        <ol>
+                            <li>(max size — 45cm x 45cm)</li>
+                            <li>(max size — 45cm x 45cm)</li>
+                            <li class="empty-note">—</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-section">
+                <div class="schedule-heading"><span class="division">Division C</span> — Arts and Crafts</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>Handicraft</li>
+                            <li>Art</li>
+                            <li>Needlework</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note">
+                        <ol>
+                            <li>(any medium)</li>
+                            <li>(any medium)</li>
+                            <li>(anything worked with a needle)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-section">
+                <div class="schedule-heading"><span class="division">Division D</span> — Cookery</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li>31</li>
+                            <li class="schedule-heading" id="men">Men</li>
+                            <li>32</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>Pot of jam</li>
+                            <li>Pot of marmalade</li>
+                            <li>Chutney</li>
+                            <li>Lemon drizzle cake</li>
+                            <li>4 shortbread biscuits</li>
+                            <li>Apple pie</li>
+                            <li class="schedule-heading" id="men-text">— This section is for men only</li>
+                            <li>Victoria sponge sandwich cake</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note">
+                        <ol>
+                            <li>(not jelly)</li>
+                            <li class="empty-note">—</li>
+                            <li>(any type)</li>
+                            <li>(without icing)</li>
+                            <li class="empty-note">—</li>
+                            <li>top and bottom</li>
+                            <li class="empty-note">—</li>
+                            <li>(no fresh cream)</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="cookery-notice"> All cookery will be tasted so please cover entries with cling film </div>
+            </div> 
+            
+            <div class="schedule-section">
+                <div class="schedule-heading"><span class="division">Division E</span> — Photography</div>
+                <div class="schedule-heading" id="pat-carter">Pat Carter Trophy for best overall photograph</div>
+                <div>(All the photos in this section should be 6 x 4 inches and not mounted)</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>33</li>
+                            <li>34</li>
+                            <li>35</li>
+                            <li>36</li>
+                            <li>37</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>Landscape</li>
+                            <li>Architectural</li>
+                            <li>Open subject</li>
+                            <li>People</li>
+                            <li>Close up</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note"></div>
+                </div>
+            </div>
+            <div class="schedule-section">
+                <div class="schedule-heading"><span class="division">Division F</span> — Children's Section</div>
+                <div class="schedule-heading" id="cash-prizes">Only this section will receive cash prizes</div>
+                <div class="schedule-heading" id="cash-prizes-info">First £3, Second £2, Third £1</div>
+                <div style="font-weight: bold;">Ages 3 and under</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>38</li>
+                            <li>39</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>Decorate 3 rich tea biscuits</li>
+                            <li>Decorate paper plate</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note"></div>
+                </div>
+            </div>
+            <div class="schedule-section">
+                <div style="font-weight: bold;">Ages 4 - 6</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>40</li>
+                            <li>41</li>
+                            <li>42</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>Decorate 3 rich tea biscuits</li>
+                            <li>Drawing on a paper plate of "My Family"</li>
+                            <li>Jam jar of flowers</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note"></div>
+                </div>
+            </div>
+            <div class="schedule-section">
+                <div style="font-weight: bold;">Ages 7 - 9</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>43</li>
+                            <li>44</li>
+                            <li>45</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>Animal made from vegetables and fruit</li>
+                            <li>Drawing of "My Teacher"</li>
+                            <li>Jam jar of flowers</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note"></div>
+                </div>
+            </div>
+            <div class="schedule-section" style="border-bottom: 0;">
+                <div style="font-weight: bold;">Ages 10 - 12</div>
+                <div class="schedule-container">
+                    <div class="schedule-numbers">
+                        <ol>
+                            <li>46</li>
+                            <li>47</li>
+                            <li>48</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-text">
+                        <ol>
+                            <li>Artwork, any subject and medium</li>
+                            <li>Photograph, any subject 6 x 4 inches, not mounted</li>
+                            <li>3 home made biscuits on a paper plate</li>
+                        </ol>
+                    </div>
+                    <div class="schedule-note"></div>
+                </div>
+            </div>
+            <div class="cookery-notice">All cookery will be tasted so please cover entries with cling film</div>
+
+            </div>
+        </div>
+        <div id="bottom-image-schedule">
+            <img src="flowerImage.png">
+        </div>
+    </main>
+    
+</body>
+<script>
+    dropdownMenu = true;      
+</script>
+</html>
+
