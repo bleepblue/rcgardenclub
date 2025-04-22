@@ -41,12 +41,33 @@ body
 }
 
 
-.schedule, .entry
+.schedule
 {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding-right: 7%;
+}
+
+.downloads
+{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right: 7%;
+}
+
+.downloads > .menu-text
+{
+    flex-grow: 0;
+    position: relative;
+    left: 12px;
+}
+
+.downloads > svg
+{
+    position: relative;
+    left: 25px;
 }
 
 .schedule
@@ -219,7 +240,7 @@ nav
     height: 0px;
 }
 
-.schedule-dropdown, .entry-dropdown
+.schedule-dropdown, .downloads-dropdown
 {
     
     overflow: hidden;
@@ -535,6 +556,7 @@ table
 }
 
 
+
 @media screen and (max-width: 1500px)
 {
     #bottom-image-schedule
@@ -669,7 +691,7 @@ table
         position: static;
     }
 
-    .entry-dropdown
+    .downloads-dropdown
     {
         width: 80%;
         margin: 0 auto;
@@ -683,12 +705,25 @@ table
         margin: 6px auto 0;
     }
 
-    .schedule, .entry
+    .schedule
     {
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
         padding: 0 30%;
+    }
+
+    .downloads
+    {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0 30%;
+    }
+
+    .downloads > .menu-text
+    {
+        left: 4px;
     }
 
     #show
@@ -802,7 +837,7 @@ table
 {
 
 
-    .schedule, .entry
+    .schedule, .downloads
     {
         padding: 0 27%;
     }
@@ -812,7 +847,7 @@ table
 {
 
 
-    .schedule, .entry
+    .schedule, .downloads
     {
         padding: 0 21%;
     }
@@ -828,7 +863,7 @@ table
 
 
 
-    .schedule, .entry
+    .schedule, .downloads
     {
         padding: 0 15%;
     }

@@ -1,13 +1,14 @@
         let dropdownMenu = false;
-        let entryMenu = false;
+        let downloadMenu = false;
         let phoneMenu = false;
+
 
         function closeDropdown()
         {
             document.querySelector(".dropdown-content").style.height="0";
             dropdownMenu = false;
-            entryMenu = false;
-            document.querySelector(".entry-dropdown").style.height="0";
+            downloadMenu = false;
+            document.querySelector(".downloads-dropdown").style.height="0";
             document.querySelector("#show").classList.remove("link-selected");
             document.querySelector("#show").classList.add("link");
             document.querySelector(".entry").classList.remove("sub-link-selected");
@@ -45,8 +46,8 @@
 
         function closeEntry()
         {
-            entryMenu = false;
-            document.querySelector(".entry-dropdown").style.height="0";
+            downloadMenu = false;
+            document.querySelector(".downloads-dropdown").style.height="0";
             document.querySelector(".dropdown-content").style.height="138px";  
             document.querySelector(".entry").classList.remove("sub-link-selected");
             document.querySelector(".entry").classList.add("sub-link");
@@ -64,8 +65,8 @@
                 {
                     document.querySelector(".dropdown-content").style.transition="none";
                 }
-            entryMenu = true;
-            document.querySelector(".entry-dropdown").style.height="92px";
+            downloadMenu = true;
+            document.querySelector(".downloads-dropdown").style.height="92px";
             document.querySelector(".dropdown-content").style.height="230px";               
             document.querySelector(".entry").classList.add("sub-link-selected");
             document.querySelector(".entry").classList.remove("sub-link");
@@ -98,7 +99,7 @@
         function entryDropdown()
         {
 
-            if (entryMenu)
+            if (downloadMenu)
                 {
                     closeEntry()
                 }
@@ -133,13 +134,13 @@
             phoneMenu = true;            
             navHeight();
             document.querySelector(".dropdown-content").style.transition="height 0.5s";
-            document.querySelector(".entry-dropdown").style.transition="height 0.5s";
+            document.querySelector(".downloads-dropdown").style.transition="height 0.5s";
             
         }
 
         function navHeight()
         {
-            if(entryMenu)
+            if(downloadMenu)
             {
                 document.querySelector("nav").style.height="460px";
             }
