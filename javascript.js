@@ -11,8 +11,8 @@
             document.querySelector(".downloads-dropdown").style.height="0";
             document.querySelector("#show").classList.remove("link-selected");
             document.querySelector("#show").classList.add("link");
-            document.querySelector(".entry").classList.remove("sub-link-selected");
-            document.querySelector(".entry").classList.add("sub-link");
+            document.querySelector(".downloads").classList.remove("sub-link-selected");
+            document.querySelector(".downloads").classList.add("sub-link");
             if(window.innerWidth <= 1100)
                 {
                     navHeight();
@@ -44,13 +44,13 @@
 
       
 
-        function closeEntry()
+        function closeDownloads()
         {
             downloadMenu = false;
             document.querySelector(".downloads-dropdown").style.height="0";
             document.querySelector(".dropdown-content").style.height="138px";  
-            document.querySelector(".entry").classList.remove("sub-link-selected");
-            document.querySelector(".entry").classList.add("sub-link");
+            document.querySelector(".downloads").classList.remove("sub-link-selected");
+            document.querySelector(".downloads").classList.add("sub-link");
             if(window.innerWidth <= 1100)
                 {
                     
@@ -59,7 +59,7 @@
                 }
         }
 
-        function openEntry()
+        function openDownloads()
         {
             if(window.innerWidth <= 1100)
                 {
@@ -68,8 +68,8 @@
             downloadMenu = true;
             document.querySelector(".downloads-dropdown").style.height="92px";
             document.querySelector(".dropdown-content").style.height="230px";               
-            document.querySelector(".entry").classList.add("sub-link-selected");
-            document.querySelector(".entry").classList.remove("sub-link");
+            document.querySelector(".downloads").classList.add("sub-link-selected");
+            document.querySelector(".downloads").classList.remove("sub-link");
             if(window.innerWidth <= 1100)
                 {
                     
@@ -96,16 +96,16 @@
         }
 
       
-        function entryDropdown()
+        function downloadsDropdown()
         {
 
             if (downloadMenu)
                 {
-                    closeEntry()
+                    closeDownloads()
                 }
             else
                 {
-                   openEntry()
+                   openDownloads()
                 }
 
         }
