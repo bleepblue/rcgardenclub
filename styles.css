@@ -153,6 +153,24 @@ ol
     flex-grow: 1;
 }
 
+#garden-entries li
+{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#garden-entries
+{
+    width: 750px;
+}
+
+#garden-section
+{
+    border-top: 4px  rgb(0, 135, 68) solid;
+    padding-top: 20px;
+    border-bottom: 0;
+}
+
 header
 {
     background-color: rgb(50, 154, 103); 
@@ -287,7 +305,7 @@ a
 {
     color: white;
     background-color: rgb(23 118 47);
-    width: 200px;
+    width: 220px;
     line-height: 40px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -306,7 +324,7 @@ a
 {
     color: white;
     background-color: rgba(23, 118, 47, 0.75);
-    width: 200px;
+    width: 220px;
     line-height: 40px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -325,7 +343,7 @@ a
 {
     color: white;
     background-color: rgb(23 118 47);
-    width: 170px;
+    width: 190px;
     line-height: 40px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -338,7 +356,7 @@ a
 {
     color: white;
     background-color: rgba(23, 118, 47, 0.75);
-    width: 170px;
+    width: 190px;
     line-height: 40px;
     text-align: center;
     font-family: Arial, sans-serif;
