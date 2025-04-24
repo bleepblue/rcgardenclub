@@ -476,7 +476,7 @@ table
     position: relative;
     top: -52px;
     z-index: -1; 
-    margin-bottom: -76px;
+    margin-bottom: -130px;
 }
 
 #hort
@@ -555,6 +555,41 @@ table
     margin-bottom: 30px;
 }
 
+.schedule-info
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.schedule-info-heading
+{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1720px)
+{
+    #top-image-schedule
+    {
+        margin-bottom: -65px;
+    }
+}
+
+@media screen and (max-width: 1720px)
+{
+    #top-image-schedule
+    {
+        margin-bottom: 0;
+    }
+}
+
 
 
 @media screen and (max-width: 1500px)
@@ -577,6 +612,11 @@ table
         transition: height 0.5s;
     }
 
+    #schedule-info-container
+    {
+        margin-top: 40px;
+    }
+
     #nav-hort
     {
         background-color: rgb(238,229,224);
@@ -590,6 +630,16 @@ table
     }
 
     .schedule-heading
+    {
+        font-size: 25px;
+    }
+
+    .schedule-info-heading
+    {
+        font-size: 30px;
+    }
+
+    .schedule-info
     {
         font-size: 25px;
     }
@@ -767,6 +817,16 @@ table
         font-size: 18px;
     }
 
+    .schedule-info-heading
+    {
+        font-size: 26px;
+    }
+
+    .schedule-info
+    {
+        font-size: 22px;
+    }
+
     li
     {
         margin-bottom: 30px;
@@ -806,6 +866,16 @@ table
     #schedule-content
     {
         font-size: 14px;
+    }
+
+    .schedule-info-heading
+    {
+        font-size: 22px;
+    }
+
+    .schedule-info
+    {
+        font-size: 20px;
     }
 }
 
