@@ -185,6 +185,11 @@ ol
     width: 750px;
 }
 
+#garden-entries-heading
+{
+    font-size: 50px;
+}
+
 #garden-section
 {
     border-top: 4px  rgb(0, 135, 68) solid;
@@ -573,6 +578,35 @@ table
     margin-bottom: 10px;
 }
 
+.garden-entries-info
+{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-wrap: nowrap;
+}
+
+.garden-entries-info-heading
+{
+    font-weight: bold;
+    margin: 10px 0;
+    text-wrap: nowrap;
+    font-size: 40px;
+}
+
+
+@media screen and (max-width: 1800px)
+{
+    .garden-entries-info
+    {
+        font-size: 30px;
+    }
+    
+    .garden-entries-info-heading
+    {
+        font-size: 34px;
+    }
+}
 
 @media screen and (max-width: 1720px)
 {
@@ -597,6 +631,11 @@ table
     #bottom-image-schedule
     {
         margin-top: -100px;
+    }
+
+    .garden-entries-info-heading
+    {
+        text-wrap: wrap;
     }
 }
 
@@ -632,6 +671,7 @@ table
     .schedule-heading
     {
         font-size: 25px;
+        
     }
 
     .schedule-info-heading
@@ -644,9 +684,21 @@ table
         font-size: 25px;
     }
 
+    .garden-entries-info
+    {
+        font-size: 25px;
+        text-wrap: wrap;
+    }
+    
+    .garden-entries-info-heading
+    {
+        font-size: 30px;
+    }
+
     .cookery-notice
     {
         font-size: 25px;
+        text-align: left;
     }
 
     .division
@@ -807,6 +859,21 @@ table
     #top-image, #top-image-schedule
     {
         top: 15vw;
+    }
+
+    .schedule-info-heading
+    {
+        text-align: left;
+    }
+
+    .schedule-info
+    {
+        text-align: left;
+    }
+
+    #garden-entries-heading
+    {
+        font-size: 45px;
     }
 }
 
