@@ -40,29 +40,63 @@
                 <div class="link">Membership</div>
             </a>
 
+
+
             <div>
-                <div class="link" id="show" onclick="dropdown()">
-                    <div class="menu-text" id="hort">Horticultural Show</div>
-                    <svg id="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                <div class="link show spring-show" style="margin-bottom: 0" onclick="dropdown('spring')">
+                    <div class="menu-text hort">Spring Show</div>
+                    <svg class="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                         <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                     </svg>
 
                 </div>
-                <div class="dropdown-content">
+                <div class="dropdown-content spring-dropdown-content">
                     <a href="./summerShow/horticulturalShow.html"><div class="sub-link">Info</div></a>
 
                     <a href="./summerShow/ShowSchedule.html"><div class="sub-link">Schedule</div></a>
                         
 
                    
-                    <div class="sub-link downloads" onclick="downloadsDropdown()">
+                    <div class="sub-link downloads spring-downloads" onclick="downloadsDropdown('spring')">
                         <div class="menu-text">Downloads</div>
                         <svg style="margin-right: -7px" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                             <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                         </svg>
                     </div>
                     
-                    <div class="downloads-dropdown">
+                    <div class="downloads-dropdown spring-downloads-dropdown">
+                        <a href="summerShow/entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
+                        <a href="summerShow/garden_show.pdf" download><div class="sub-sub-link">Garden Entries</div></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <div class="link show hort-show" id="hort-show" onclick="dropdown('hort')">
+                    <div class="menu-text hort">Horticultural Show</div>
+                    <svg class="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                        <polygon points="0,18 16,18 8,28" fill="white"></polygon>
+                    </svg>
+
+                </div>
+                <div class="dropdown-content hort-dropdown-content">
+                    <a href="./summerShow/horticulturalShow.html"><div class="sub-link">Info</div></a>
+
+                    <a href="./summerShow/ShowSchedule.html"><div class="sub-link">Schedule</div></a>
+                        
+
+                   
+                    <div class="sub-link downloads hort-downloads" onclick="downloadsDropdown('hort')">
+                        <div class="menu-text">Downloads</div>
+                        <svg style="margin-right: -7px" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                            <polygon points="0,18 16,18 8,28" fill="white"></polygon>
+                        </svg>
+                    </div>
+                    
+                    <div class="downloads-dropdown hort-downloads-dropdown">
                         <a href="summerShow/entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
                         <a href="summerShow/garden_show.pdf" download><div class="sub-sub-link">Garden Entries</div></a>
                     </div>

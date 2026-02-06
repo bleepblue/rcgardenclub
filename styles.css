@@ -24,10 +24,9 @@ body
     background-color: rgb(17 145 43 / 7%);
 }
 
-#show
+.show
 {
     color: white;
-    width: 260px;
     line-height: 40px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -38,6 +37,11 @@ body
     justify-content: center;
     box-sizing: border-box;
     padding-right: 7%;
+}
+
+#hort-show
+{
+    width: 260px;
 }
 
 
@@ -340,7 +344,7 @@ a
     border-radius: 5px;
 }
 
-.link:hover, .home:hover, .sub-link:hover, .sub-sub-link:hover, #show:hover
+.link:hover, .home:hover, .sub-link:hover, .sub-sub-link:hover, .show:hover
 {
     background-color: rgba(23, 118, 47, 0.76);
     cursor: pointer;
@@ -484,12 +488,12 @@ table
     margin-bottom: -130px;
 }
 
-#hort
+.hort
 {
     flex-grow: 0;
 }
 
-#hort-arrow
+.hort-arrow
 {
     margin: 0 -20px 0 8px;
 }
@@ -748,13 +752,13 @@ table
         top: 120px;
     }
 
-    #hort
+    .hort
     {
         position: relative;
         left: 4vw;
     }
 
-    #hort-arrow
+    .hort-arrow
     {
         position: relative;
         left: 8vw;
@@ -828,13 +832,18 @@ table
         left: 4px;
     }
 
-    #show
+    .show
     {
         display: flex;
         justify-content: center;
         box-sizing: border-box;
 
         width: 100%; 
+    }
+
+    #hort-show
+    {
+        width: 100%;
     }
 
     .container

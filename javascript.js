@@ -1,18 +1,18 @@
-        let dropdownMenu = false;
-        let downloadMenu = false;
+        let springDropdownMenu = false;
+        let springDownloadMenu = false;
+        let hortDropdownMenu = false;
+        let hortDownloadMenu = false;
         let phoneMenu = false;
 
 
-        function closeDropdown()
+        function closeDropdown(menu)
         {
-            document.querySelector(".dropdown-content").style.height="0";
-            dropdownMenu = false;
-            downloadMenu = false;
-            document.querySelector(".downloads-dropdown").style.height="0";
-            document.querySelector("#show").classList.remove("link-selected");
-            document.querySelector("#show").classList.add("link");
-            document.querySelector(".downloads").classList.remove("sub-link-selected");
-            document.querySelector(".downloads").classList.add("sub-link");
+            document.querySelector(`.${menu}-dropdown-content`).style.height="0";
+            document.querySelector(`.${menu}-downloads-dropdown`).style.height="0";
+            document.querySelector(`.${menu}-show`).classList.remove("link-selected");
+            document.querySelector(`.${menu}-show`).classList.add("link");
+            document.querySelector(`.${menu}-downloads`).classList.remove("sub-link-selected");
+            document.querySelector(`.${menu}-downloads`).classList.add("sub-link");
             if(window.innerWidth <= 1100)
                 {
                     navHeight();
@@ -20,21 +20,20 @@
                 }
         }
 
-        function openDropdown()
+        function openDropdown(menu)
         {
             if(window.innerWidth <= 1100)
                 {
-                    document.querySelector(".dropdown-content").style.transition="none";
+                    document.querySelector(`.${menu}-dropdown-content`).style.transition="none";
                 }
-            document.querySelector(".dropdown-content").style.height="138px";
-            dropdownMenu = true;
-            document.querySelector("#show").classList.add("link-selected");
-            document.querySelector("#show").classList.remove("link");
+            document.querySelector(`.${menu}-dropdown-content`).style.height="138px";
+            document.querySelector(`.${menu}-show`).classList.add("link-selected");
+            document.querySelector(`.${menu}-show`).classList.remove("link");
             if(window.innerWidth <= 1100)
                 {
                     
                     
-                    openNav();
+                    openNav(menu);
                         
                 }
             
@@ -44,13 +43,12 @@
 
       
 
-        function closeDownloads()
+        function closeDownloads(menu)
         {
-            downloadMenu = false;
-            document.querySelector(".downloads-dropdown").style.height="0";
-            document.querySelector(".dropdown-content").style.height="138px";  
-            document.querySelector(".downloads").classList.remove("sub-link-selected");
-            document.querySelector(".downloads").classList.add("sub-link");
+            document.querySelector(`.${menu}-downloads-dropdown`).style.height="0";
+            document.querySelector(`.${menu}-dropdown-content`).style.height="138px";  
+            document.querySelector(`.${menu}-downloads`).classList.remove("sub-link-selected");
+            document.querySelector(`.${menu}-downloads`).classList.add("sub-link");
             if(window.innerWidth <= 1100)
                 {
                     
@@ -59,21 +57,20 @@
                 }
         }
 
-        function openDownloads()
+        function openDownloads(menu)
         {
             if(window.innerWidth <= 1100)
                 {
-                    document.querySelector(".dropdown-content").style.transition="none";
+                    document.querySelector(`.${menu}-dropdown-content`).style.transition="none";
                 }
-            downloadMenu = true;
-            document.querySelector(".downloads-dropdown").style.height="92px";
-            document.querySelector(".dropdown-content").style.height="230px";               
-            document.querySelector(".downloads").classList.add("sub-link-selected");
-            document.querySelector(".downloads").classList.remove("sub-link");
+            document.querySelector(`.${menu}-downloads-dropdown`).style.height="92px";
+            document.querySelector(`.${menu}-dropdown-content`).style.height="230px";               
+            document.querySelector(`.${menu}-downloads`).classList.add("sub-link-selected");
+            document.querySelector(`.${menu}-downloads`).classList.remove("sub-link");
             if(window.innerWidth <= 1100)
                 {
                     
-                    openNav();
+                    openNav(menu);
                         
                 }
         }
@@ -82,30 +79,73 @@
 
 
 
-        function dropdown()
+        function dropdown(menu)
         {
-            if (dropdownMenu)
+            if (menu == "spring")
                 {
-                   closeDropdown()
+                    if (springDropdownMenu)
+                        {
+                            springDropdownMenu = false;
+                            springDownloadMenu = false;
+                            closeDropdown(menu)
+                        }
+
+                    else
+                        {
+                            springDropdownMenu = true;
+                            openDropdown(menu)
+                        }
                 }
-            else
+
+            else if (menu == "hort")
                 {
-                    openDropdown()
+                    if (hortDropdownMenu)
+                        {
+                            hortDropdownMenu = false;
+                            hortDownloadMenu = false;
+                            closeDropdown(menu)
+                        }
+
+                    else
+                        {
+                            hortDropdownMenu = true;
+                            openDropdown(menu)
+                        }
                 }
 
         }
 
       
-        function downloadsDropdown()
+        function downloadsDropdown(menu)
         {
+            if (menu == "spring")
+                {
+                    if (springDownloadMenu)
+                        {
+                            springDownloadMenu = false;
+                            closeDownloads(menu)
+                        }
 
-            if (downloadMenu)
-                {
-                    closeDownloads()
+                    else
+                        {
+                            springDownloadMenu= true;
+                            openDownloads(menu)
+                        }
                 }
-            else
+
+            else if (menu == "hort")
                 {
-                   openDownloads()
+                    if (hortDownloadMenu)
+                        {
+                            hortDownloadMenu = false;
+                            closeDownloads(menu)
+                        }
+
+                    else
+                        {
+                            hortDownloadMenu = true;
+                            openDownloads(menu)
+                        }
                 }
 
         }
@@ -129,28 +169,42 @@
             }
         }
 
-        function openNav()
+        function openNav(menu)
         {
             phoneMenu = true;            
             navHeight();
-            document.querySelector(".dropdown-content").style.transition="height 0.5s";
-            document.querySelector(".downloads-dropdown").style.transition="height 0.5s";
+            document.querySelector(".spring-dropdown-content").style.transition="height 0.5s";
+            document.querySelector(".spring-downloads-dropdown").style.transition="height 0.5s";
+            document.querySelector(".hort-dropdown-content").style.transition="height 0.5s";
+            document.querySelector(".hort-downloads-dropdown").style.transition="height 0.5s";
             
         }
 
         function navHeight()
         {
-            if(downloadMenu)
+            if(hortDownloadMenu && springDownloadMenu)
             {
-                document.querySelector("nav").style.height="460px";
+                document.querySelector("nav").style.height="736px";  
             }
-            else if(dropdownMenu)
+            else if((hortDownloadMenu && springDropdownMenu) || (hortDropdownMenu && springDownloadMenu))
             {
-                document.querySelector("nav").style.height="368px";
+                document.querySelector("nav").style.height="644px";  
+            }
+            else if(hortDropdownMenu && springDropdownMenu)
+            {
+                document.querySelector("nav").style.height="552px";  
+            }
+            else if((hortDropdownMenu && hortDownloadMenu) || (springDropdownMenu && springDownloadMenu))
+            {
+                document.querySelector("nav").style.height="506px";
+            }
+            else if(hortDropdownMenu || springDropdownMenu)
+            {
+                document.querySelector("nav").style.height="414px";  
             }
             else if(phoneMenu)
             {
-                document.querySelector("nav").style.height="230px";  
+                document.querySelector("nav").style.height="276px";  
             }
             else
             {
