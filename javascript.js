@@ -1,5 +1,4 @@
         let springDropdownMenu = false;
-        let springDownloadMenu = false;
         let hortDropdownMenu = false;
         let hortDownloadMenu = false;
         let phoneMenu = false;
@@ -8,11 +7,15 @@
         function closeDropdown(menu)
         {
             document.querySelector(`.${menu}-dropdown-content`).style.height="0";
-            document.querySelector(`.${menu}-downloads-dropdown`).style.height="0";
             document.querySelector(`.${menu}-show`).classList.remove("link-selected");
             document.querySelector(`.${menu}-show`).classList.add("link");
-            document.querySelector(`.${menu}-downloads`).classList.remove("sub-link-selected");
-            document.querySelector(`.${menu}-downloads`).classList.add("sub-link");
+
+            if(menu == "hort")
+                {
+                    document.querySelector(".hort-downloads-dropdown").style.height="0";
+                    document.querySelector(".hort-downloads").classList.remove("sub-link-selected");
+                    document.querySelector(".hort-downloads").classList.add("sub-link");
+                }
             if(window.innerWidth <= 1100)
                 {
                     navHeight();
@@ -45,10 +48,10 @@
 
         function closeDownloads(menu)
         {
-            document.querySelector(`.${menu}-downloads-dropdown`).style.height="0";
+            document.querySelector(".hort-downloads-dropdown").style.height="0";
             document.querySelector(`.${menu}-dropdown-content`).style.height="138px";  
-            document.querySelector(`.${menu}-downloads`).classList.remove("sub-link-selected");
-            document.querySelector(`.${menu}-downloads`).classList.add("sub-link");
+            document.querySelector(".hort-downloads").classList.remove("sub-link-selected");
+            document.querySelector(".hort-downloads").classList.add("sub-link");
             if(window.innerWidth <= 1100)
                 {
                     
@@ -63,10 +66,10 @@
                 {
                     document.querySelector(`.${menu}-dropdown-content`).style.transition="none";
                 }
-            document.querySelector(`.${menu}-downloads-dropdown`).style.height="92px";
+            document.querySelector(".hort-downloads-dropdown").style.height="92px";
             document.querySelector(`.${menu}-dropdown-content`).style.height="230px";               
-            document.querySelector(`.${menu}-downloads`).classList.add("sub-link-selected");
-            document.querySelector(`.${menu}-downloads`).classList.remove("sub-link");
+            document.querySelector(".hort-downloads").classList.add("sub-link-selected");
+            document.querySelector(".hort-downloads").classList.remove("sub-link");
             if(window.innerWidth <= 1100)
                 {
                     
@@ -86,7 +89,6 @@
                     if (springDropdownMenu)
                         {
                             springDropdownMenu = false;
-                            springDownloadMenu = false;
                             closeDropdown(menu)
                         }
 
@@ -118,37 +120,21 @@
       
         function downloadsDropdown(menu)
         {
-            if (menu == "spring")
-                {
-                    if (springDownloadMenu)
-                        {
-                            springDownloadMenu = false;
-                            closeDownloads(menu)
-                        }
 
-                    else
-                        {
-                            springDownloadMenu= true;
-                            openDownloads(menu)
-                        }
+            if (hortDownloadMenu)
+                {
+                    hortDownloadMenu = false;
+                    closeDownloads(menu)
                 }
 
-            else if (menu == "hort")
+            else
                 {
-                    if (hortDownloadMenu)
-                        {
-                            hortDownloadMenu = false;
-                            closeDownloads(menu)
-                        }
-
-                    else
-                        {
-                            hortDownloadMenu = true;
-                            openDownloads(menu)
-                        }
+                    hortDownloadMenu = true;
+                    openDownloads(menu)
                 }
-
         }
+
+        
 
         function menuDropdown()
         {
@@ -174,7 +160,6 @@
             phoneMenu = true;            
             navHeight();
             document.querySelector(".spring-dropdown-content").style.transition="height 0.5s";
-            document.querySelector(".spring-downloads-dropdown").style.transition="height 0.5s";
             document.querySelector(".hort-dropdown-content").style.transition="height 0.5s";
             document.querySelector(".hort-downloads-dropdown").style.transition="height 0.5s";
             
@@ -182,19 +167,16 @@
 
         function navHeight()
         {
-            if(hortDownloadMenu && springDownloadMenu)
+            
+            if(hortDownloadMenu && springDropdownMenu)
             {
-                document.querySelector("nav").style.height="736px";  
-            }
-            else if((hortDownloadMenu && springDropdownMenu) || (hortDropdownMenu && springDownloadMenu))
-            {
-                document.querySelector("nav").style.height="644px";  
+                document.querySelector("nav").style.height="690px";  
             }
             else if(hortDropdownMenu && springDropdownMenu)
             {
                 document.querySelector("nav").style.height="552px";  
             }
-            else if((hortDropdownMenu && hortDownloadMenu) || (springDropdownMenu && springDownloadMenu))
+            else if(hortDropdownMenu && hortDownloadMenu)
             {
                 document.querySelector("nav").style.height="506px";
             }

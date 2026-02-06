@@ -249,6 +249,11 @@ nav
     height: 0px;
 }
 
+.spring-dropdown-content
+{
+    width: 212px;
+}
+
 .schedule-dropdown, .downloads-dropdown
 {
     
@@ -344,7 +349,20 @@ a
     border-radius: 5px;
 }
 
-.link:hover, .home:hover, .sub-link:hover, .sub-sub-link:hover, .show:hover
+.sub-link-spring
+{
+    color: white;
+    background-color: rgb(23 118 47);
+    width: 180px;
+    line-height: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.link:hover, .home:hover, .sub-link:hover, .sub-sub-link:hover, .show:hover, .sub-link-spring:hover
 {
     background-color: rgba(23, 118, 47, 0.76);
     cursor: pointer;
@@ -395,7 +413,7 @@ a
     border-radius: 5px;
 }
 
-.sub-link, .sub-sub-link, .sub-link-selected, .sub-sub-link-selected
+.sub-link, .sub-sub-link, .sub-link-selected, .sub-sub-link-selected, .sub-link-spring
 {
     margin-top: 6px;
 }
@@ -805,7 +823,7 @@ table
         position: static;
     }
 
-    .sub-link,  .sub-link-selected, .sub-sub-link, .sub-sub-link-selected, .link-selected
+    .sub-link,  .sub-link-selected, .sub-sub-link, .sub-sub-link-selected, .link-selected, .sub-link-spring
     {
         width: 100%;
         margin: 6px auto 0;
