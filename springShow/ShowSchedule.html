@@ -22,7 +22,7 @@
             </svg>
         </div>
         
-        <nav>
+<nav id="nav">
             <a href="/">
                 <div class="home">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
@@ -40,38 +40,54 @@
                 <div class="link">Membership</div>
             </a>
 
+
+
             <div>
-                <div class="show link-selected" onclick="dropdown()">
-                    <div class="menu-text">Spring Show</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                <div class="link show spring-show" style="margin-bottom: 0" onclick="dropdown('spring')">
+                    <div class="menu-text hort">Spring Show</div>
+                    <svg class="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                         <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                     </svg>
 
                 </div>
-                <div class="dropdown-content" style="height: 230px;">
-                    <a href="./SpringShow.html"><div class="sub-link">Info</div></a>
+                <div class="dropdown-content spring-dropdown-content">
+                    <a href="./SpringShow.html"><div class="sub-link-spring">Info</div></a>
 
-                    <div class="sub-link-selected schedule" onclick="scheduleDropdown()"><div class="menu-text">Schedule</div> 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
-                            <polygon points="0,18 16,18 8,28" fill="white"></polygon>
-                        </svg>
-                    </div>
+                    <a href="./ShowSchedule.html"><div class="sub-link-spring">Schedule</div></a>
+                        
+                    <a href="./Spring_Show_Entry_Form.docx" download><div class="sub-link-spring">Entry Form</div></a>
 
-                    <div class="schedule-dropdown" style="height: 92px">
-                        <a href="./ShowSchedule.html"><div class="sub-sub-link-selected">View</div></a>
-                        <a href="./Spring_Show_Schedule.docx" download><div class="sub-sub-link">Download</div></a>
-                    </div>
+                </div>
+            </div>
 
-                    <div class="sub-link entry" onclick="entryDropdown()">
-                        <div class="menu-text">Entry Form</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+
+
+
+            <div>
+                <div class="link show hort-show" id="hort-show" onclick="dropdown('hort')">
+                    <div class="menu-text hort">Horticultural Show</div>
+                    <svg class="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                        <polygon points="0,18 16,18 8,28" fill="white"></polygon>
+                    </svg>
+
+                </div>
+                <div class="dropdown-content hort-dropdown-content">
+                    <a href="./summerShow/horticulturalShow.html"><div class="sub-link">Info</div></a>
+
+                    <a href="./summerShow/ShowSchedule.html"><div class="sub-link">Schedule</div></a>
+                        
+
+                   
+                    <div class="sub-link downloads hort-downloads" onclick="downloadsDropdown('hort')">
+                        <div class="menu-text">Downloads</div>
+                        <svg style="margin-right: -7px" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                             <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                         </svg>
                     </div>
                     
-                    <div class="entry-dropdown">
-                        <a href="./ShowEntry.html"><div class="sub-sub-link">View</div></a>
-                        <a href="./Spring_Show_Entry_Form.docx" download><div class="sub-sub-link">Download</div></a>
+                    <div class="downloads-dropdown hort-downloads-dropdown">
+                        <a href="summerShow/entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
+                        <a href="summerShow/garden_show.pdf" download><div class="sub-sub-link">Garden Entries</div></a>
                     </div>
                 </div>
             </div>
@@ -83,69 +99,67 @@
                 <h2>Schedule of Entries</h2>
                 <div class="schedule-container">
                 
-                    <div class="schedule-left">
+                    <div class="schedule-left" style="margin-right:50px">
                     <p class="sub-heading">Section A</p>
                 <p>(Note - Narcissus = daffodil)</p>
                 <ol>
-                    <li>One stem single flowered Narcissus</li>
-                    <li>One stem double flowered Narcissus</li>
-                    <li>One stem white Narcissus</li>
-                    <li>One stem split corona Narcissus</li>
-                    <li>One stem any multiheaded Narcissus</li>
-                    <li>Three stems (tall) Narcissus any variety all different</li>
-                    <li>Three stems miniature/Cyclamineus/Tete-a-Tete Narcissus</li>
-                    <li>One stem Iris any variety</li>
-                    <li>One stem single flowered Tulip</li>
-                    <li>One stem double flowered Tulip</li>
-                    <li>Three stems Tulip, same or mixed varieties</li>
-                    <li>One stem Camellia</li>
-                    <li>Three stems Camellia same or mixed varieties</li>
-                    <li>One stem Magnolia</li>
-                    <li>Single specimen of any other flower you would like to display</li>
+                    <li>1. One stem single flowered Narcissus – deep cup</li>
+                    <li>2. One stem single flowered Narcissus – shallow cup</li>
+                    <li>3. One stem double flowered Narcissus</li>
+                    <li>4. One stem white Narcissus</li>
+                    <li>5. One stem any multiheaded Narcissus</li>
+                    <li>6. Three stems (tall) Narcissus any variety all different</li>
+                    <li>7. Three stems miniature/Cyclamineus/Tete-a-Tete Narcissus</li>
+                    <li>8. One stem single flowered Tulip</li>
+                    <li>9. One stem double flowered Tulip	</li>
+                    <li>10. Three stems Tulip, same or mixed varieties</li>
+                    <li>11. Three stems any bulbous spring plant all different</li>
+                    <li>12. One stem Camellia</li>
+                    <li>13. Three stems Camellia same or mixed varieties</li>
+                    <li>14. One stem Magnolia</li>
+                    <li>15. Single specimen of any other flower you would like to display</li>
                     <p><i>All the above to be displayed in bikini vases supplied by the club</i></p>
-                    <li>Wallflowers same or mixed varieties displayed in a jam jar</li>
-                    <li>Polyanthus, any cultivar, max 6 stems in a jam jar</li>
-                    <li>Pansies or Violas displayed in an egg cup</li>
-                    <li>Vase of mixed spring flowers in a jam jar</li>
-                    <li>Vase of spring blossom (tree or shrub), max six stems</li>
-                    <li>Vase of foliage to be displayed for effect</li>
-                    <li>Single hellebore heads floating in entrants own bowl</li>
-                    <li>Double hellebore heads floating in entrants own bowl</li>
-                    <li>One potted Primula (any cultivar to include polyanthus auricula or primrose)</li>
-                    <li>One potted Orchid any variety</li>
-                    <li>Any other potted flowering plant</li>
-                    <li>Any potted foliage house plant</li>
+                    <li>16. Wallflowers same or mixed varieties displayed in a jam jar</li>
+                    <li>17. Display of mixed spring flowers in a jam jar</li>
+                    <li>18. Vase of spring blossom (tree or shrub), max six stems</li>
+                    <li>19. Vase of foliage to be displayed for effect</li>
+                    <li>20. Single hellebore heads floating in entrants own bowl</li>
+                    <li>21. Double hellebore heads floating in entrants own bowl</li>
+                    <li>22. One potted Orchid any variety</li>
+                    <li>23. Any other potted flowering plant</li>
+                    <li>24. Any potted foliage house plant</li>
+
                 </ol>  
                 </div>
                 <div class="schedule-right">
                     <p class="sub-heading">Section B <br> Floral Art</p>
                     <ol>
-                        <li>A floral arrangement to celebrate Jane Austin
-                            who was born on 16th December 1775.
+                        <li>1. A large floral arrangement on the theme of “10th anniversary”
                             Maximum size 45cm x 45cm.</li>
-                        <li>An artistic arrangement of dried flowers, seed heads etc.</li>
+                        <li>2. A “cup cake” made of flowers</li>
+                        <li>3. Gents button hole for a spring wedding</li>
                     </ol>
                     <p class="sub-heading">Section C</p>
                     <ol>
-                        <li>Rhubarb 3 stems (to show a small base of leaf)</li>
-                        <li>Bowl of winter salad</li>
-                        <li>Three specimens of any one vegetable</li>
-                        <li>Bunch of herbs in a jam jar (predominantly foliage)</li>
+                        <li>1. Rhubarb 3 stems (to show a small base of leaf)</li>
+                        <li>2. Bowl of winter salad</li>
+                        <li>3. Basket of vegetables</li>
+                        <li>4. Bunch of herbs in a jam jar (predominantly foliage)</li>
                     </ol>
                     <p class="sub-heading">Section D</p>
                     <ol>
                         <li>
-                            A planted spring container (not hanging)
+                            1. A planted spring container (not hanging)
                         </li>
                     </ol>
-                    <p class="sub-heading">Section E <br>Children's Section</p>
+                    <p class="sub-heading">Section E <br>Children's Section (ages 7 and under and 8+)</p>
                     <ol>
-                        <li>A display of flower heads (can be floating or set in damp sand)</li>
-                        <li>A floral card for Mother's Day</li>
-                        <li>A Mother's Day posy</li>
+                        <li>1. A garden in a tray</li>
+                        <li>2. A spring posy</li>
+                        
                     </ol>
                     <p class="sub-heading">Members Only Section</p>
-                    <p>Hyacinth growing competition - Please bring your plants to be displayed whatever the
+                    <p>Tulip growing competition - Please bring your plants to be displayed whatever the
                         condition. Prize for best and worst exhibit.</p>
                 </div>
             </div>

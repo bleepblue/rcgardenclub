@@ -22,7 +22,7 @@
             </svg>
         </div>
         
-        <nav>
+<nav id="nav">
             <a href="/">
                 <div class="home">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
@@ -40,66 +40,104 @@
                 <div class="link">Membership</div>
             </a>
 
+
+
             <div>
-                <div class="show link-selected" onclick="dropdown()">
-                    <div class="menu-text">Spring Show</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                <div class="link show spring-show" style="margin-bottom: 0" onclick="dropdown('spring')">
+                    <div class="menu-text hort">Spring Show</div>
+                    <svg class="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                         <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                     </svg>
 
                 </div>
-                <div class="dropdown-content" style="height: 138px;">
-                    <a href="./SpringShow.html"><div class="sub-link-selected">Info</div></a>      
-                    <div class="sub-link schedule" onclick="scheduleDropdown()"><div class="menu-text">Schedule</div> 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
-                            <polygon points="0,18 16,18 8,28" fill="white"></polygon>
-                        </svg>
-                    </div>
+                <div class="dropdown-content spring-dropdown-content">
+                    <a href="./SpringShow.html"><div class="sub-link-spring">Info</div></a>
 
-                    <div class="schedule-dropdown">
-                        <a href="./ShowSchedule.html"><div class="sub-sub-link">View</div></a>
-                        <a href="./Spring_Show_Schedule.docx" download><div class="sub-sub-link">Download</div></a>
-                    </div>
+                    <a href="./ShowSchedule.html"><div class="sub-link-spring">Schedule</div></a>
+                        
+                    <a href="./Spring_Show_Entry_Form.docx" download><div class="sub-link-spring">Entry Form</div></a>
 
-                    <div class="sub-link entry" onclick="entryDropdown()">
-                        <div class="menu-text">Entry Form</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <div class="link show hort-show" id="hort-show" onclick="dropdown('hort')">
+                    <div class="menu-text hort">Horticultural Show</div>
+                    <svg class="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                        <polygon points="0,18 16,18 8,28" fill="white"></polygon>
+                    </svg>
+
+                </div>
+                <div class="dropdown-content hort-dropdown-content">
+                    <a href="./summerShow/horticulturalShow.html"><div class="sub-link">Info</div></a>
+
+                    <a href="./summerShow/ShowSchedule.html"><div class="sub-link">Schedule</div></a>
+                        
+
+                   
+                    <div class="sub-link downloads hort-downloads" onclick="downloadsDropdown('hort')">
+                        <div class="menu-text">Downloads</div>
+                        <svg style="margin-right: -7px" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                             <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                         </svg>
                     </div>
                     
-                    <div class="entry-dropdown">
-                        <a href="./ShowEntry.html"><div class="sub-sub-link">View</div></a>
-                        <a href="./Spring_Show_Entry_Form.docx" download><div class="sub-sub-link">Download</div></a>
+                    <div class="downloads-dropdown hort-downloads-dropdown">
+                        <a href="summerShow/entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
+                        <a href="summerShow/garden_show.pdf" download><div class="sub-sub-link">Garden Entries</div></a>
                     </div>
                 </div>
             </div>
             
         </nav>
+
         <div class="container spring-mobile">
             <div class="margin-left"></div>
             <div class="text">
 
                 <img style="width: 70%" src="spring_image.png">
 
-                <h2>CELEBRATING OUR 10TH ANNIVERSARY</h2>
+                <h1 style="color: red">CELEBRATING OUR 10TH ANNIVERSARY</h1>
 
                 
-                <p class="sub-heading">St. John's Church Centre</p>
+                <p class="sub-heading">at St. John's Church Centre</p>
                 <p>120 Redhill Road, Rowlands Castle, PO9 6DF <a href="https://maps.app.goo.gl/jYCnTjkXiHYMrGtn9" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 16 16" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.37892 10.2236L8 16L12.6211 10.2236C13.5137 9.10788 14 7.72154 14 6.29266V6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6V6.29266C2 7.72154 2.4863 9.10788 3.37892 10.2236ZM8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8Z" fill="#000000"/>
-                    </svg></a></p>
-                <h2>Saturday 29th March 2025</h2>
-                <p>Competition Entries 10.00 - 12.00</p>
-                <p>Judging 12.00 - 14.00</p>
-                <p>Public Entry 14.00 - 16.30</p>
-                <p><i>Entries Close 9pm Wednesday 26th March 2025</i></p>
-                <p class="sub-heading">Entry is open to both members and non-members of Rowlands Castle Gardening Club</p>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.37892 10.2236L8 16L12.6211 10.2236C13.5137 9.10788 14 7.72154 14 6.29266V6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6V6.29266C2 7.72154 2.4863 9.10788 3.37892 10.2236ZM8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8Z" fill="#000000"/>
+                </svg></a></p>
+                <h1>Saturday 28th March 2026</h1>
+
+                
+                <p><i>Competition Entries 10.00 - 12.00</i></p>
+                <p><i>Judging 12.00 - 14.00</i></p>
+                <p><i>Public Entry 14.00 - 16.30</i></p>
+                <p><i>Entries Close Wednesday 25th March 2026</i></p>
+                <br>
                 <p>Submit entry forms to:</p>        
                 <p>Fiona Charlesworth, 1 Yardlea Close, Rowlands Castle</p>
                 <p>Cathy Tyrrell, 85A Finchdean Road, Rowlands Castle</p>
                 <p>Show Secretary Catherine Tyrrell</p>
-                <p class="sub-heading">For rules of entry see Entry Form</p>    
+                <br>
+                <p class="sub-heading">Rules of Entry</p>
+                <ol>
+                    <li>1. Entry is open to both members and non-members of Rowlands Castle Gardening Club.</li>
+                    <li>2. Exhibitors may only enter one exhibit in each class.</li>
+                    <li>3. Entry forms to be submitted by Wednesday 25th March.</li>
+                    <li>4. The hall will be open to receive competition entries between 10a.m. and 12 noon</li>
+                    <li>No entries will be received after 12 noon. Judging between 12 noon and 2 p.m</li>
+                    <li>The show opens to the public at 2 p.m</li>
+                    <li>Exhibits to be collected after 16.30. Any exhibit remaining at 17.00 will be disposed of.</li>
+                    <li>5. All plant and vegetable material must have been grown by the competitor.</li>
+                    <li>6. Pot plants must have been in the competitor’s possession for at least 4 months</li>
+                    <li>7. Competitors may use purchased plant material and sundry decorative materials in sections B and D – No plastic oasis please</li>
+                    <li>8. The judge’s decision shall be final.</li>
+                    <li>9. The club will take reasonable ordinary care of` the exhibits but cannot be held responsible in any way for damage or loss to persons or property.</li>
+
+                </ol>
+                <p class="sub-heading">Full details of the rules, schedule and entry forms will also be available 
+                    under Cultural and Social - garden club section at <a href="https://www.rowlandscastle.com/">rowlandscastle.com</a></p>    
             </div>
             <div class="margin-right"></div>
         </div>
