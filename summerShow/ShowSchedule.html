@@ -22,7 +22,7 @@
             </svg>
         </div>
         
-        <nav id="nav-hort">
+        <nav id="nav">
             <a href="/">
                 <div class="home">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
@@ -40,31 +40,54 @@
                 <div class="link">Membership</div>
             </a>
 
+
+
             <div>
-                <div class="link-selected" id="show" onclick="dropdown()">
-                    <div class="menu-text" id="hort">Horticultural Show</div>
-                    <svg id="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                <div class="link show spring-show" style="margin-bottom: 0" onclick="dropdown('spring')">
+                    <div class="menu-text hort">Spring Show</div>
+                    <svg class="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                         <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                     </svg>
 
                 </div>
-                <div class="dropdown-content" style="height: 230px;">
+                <div class="dropdown-content spring-dropdown-content">
+                    <a href="../springShow/SpringShow.html"><div class="sub-link-spring">Info</div></a>
+
+                    <a href="../springShow/ShowSchedule.html"><div class="sub-link-spring">Schedule</div></a>
+                        
+                    <a href="../springShow/Spring_Show_Entry_Form.docx" download><div class="sub-link-spring">Entry Form</div></a>
+
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <div class="link show hort-show" id="hort-show" onclick="dropdown('hort')">
+                    <div class="menu-text hort">Horticultural Show</div>
+                    <svg class="hort-arrow" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
+                        <polygon points="0,18 16,18 8,28" fill="white"></polygon>
+                    </svg>
+
+                </div>
+                <div class="dropdown-content hort-dropdown-content">
                     <a href="./horticulturalShow.html"><div class="sub-link">Info</div></a>
 
-                    <a href="./ShowSchedule.html"><div class="sub-link-selected">Schedule</div></a>
+                    <a href="./ShowSchedule.html"><div class="sub-link">Schedule</div></a>
                         
 
                    
-                    <div class="sub-link downloads" onclick="downloadsDropdown()">
+                    <div class="sub-link downloads hort-downloads" onclick="downloadsDropdown('hort')">
                         <div class="menu-text">Downloads</div>
                         <svg style="margin-right: -7px" xmlns="http://www.w3.org/2000/svg" fill="white" height="40" width="16" version="1.1">
                             <polygon points="0,18 16,18 8,28" fill="white"></polygon>
                         </svg>
                     </div>
                     
-                    <div class="downloads-dropdown">
-                        <a href="entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
-                        <a href="garden_show.pdf" download><div class="sub-sub-link">Garden Entries</div></a>
+                    <div class="downloads-dropdown hort-downloads-dropdown">
+                        <a href="./entry_forms.pdf" download><div class="sub-sub-link">Entry Forms</div></a>
+                        <a href="./garden_show.pdf" download><div class="sub-sub-link">Garden Entries</div></a>
                     </div>
                 </div>
             </div>
@@ -176,7 +199,7 @@
                     <div class="schedule-text">
                         <ol>
                             <li>200 years of railway</li>
-                            <li>Arrangement of flowers from your garden</li>
+                            <li class="nowrap">Arrangement of flowers from your garden</li>
                             <li>Petite within a wine glass</li>
                         </ol>
                     </div>
@@ -237,10 +260,10 @@
                         <ol>
                             <li>Pot of jam</li>
                             <li>Pot of marmalade</li>
+                            <li>Chutney</li>
                             <li>Tarte Tatin</li>
-                            <li>A birthday cake for an 8 year old interested in cars and trains</li>
-                            <li>Apple crumble</li>
-                            <li>Apple pie</li>
+                            <li class="spacing1">A birthday cake for an 8 year old interested in cars and trains</li>
+                            <li class="spacing2">Apple crumble</li>
                             <li class="schedule-heading" id="men-text">— This section is for men only</li>
                             <li>Bakewell tart</li>
                         </ol>
@@ -263,7 +286,6 @@
             
             <div class="schedule-section">
                 <div class="schedule-heading"><span class="division">Division E</span> — Photography</div>
-                <div class="schedule-heading" id="pat-carter">Pat Carter Trophy for best overall photograph</div>
                 <div>(All the photos in this section should be 7 x 5 inches and not mounted)</div>
                 <div class="schedule-container">
                     <div class="schedule-numbers">
@@ -348,7 +370,7 @@
                     </div>
                     <div class="schedule-text">
                         <ol>
-                            <li>Animal made from vegetables and fruit</li>
+                            <li class="nowrap">Animal made from vegetables and fruit</li>
                             <li>Drawing of "My Teacher"</li>
                             <li>Jam jar of flowers</li>
                         </ol>
@@ -375,7 +397,7 @@
                     <div class="schedule-text">
                         <ol>
                             <li>Artwork, any subject and medium</li>
-                            <li>Photograph, any subject 7 x 5 inches, not mounted</li>
+                            <li class="nowrap">Photograph, any subject 7 x 5 inches, not mounted</li>
                             <li>3 home made biscuits on a paper plate</li>
                         </ol>
                     </div>

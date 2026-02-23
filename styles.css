@@ -168,6 +168,11 @@ li
     margin-bottom:20px;
 }
 
+.nowrap
+{
+    text-wrap: nowrap;
+}
+
 ol
 {
     padding:0;
@@ -616,6 +621,11 @@ table
     font-size: 40px;
 }
 
+.spacing1
+{
+    text-wrap: nowrap;
+}
+
 
 @media screen and (max-width: 1800px)
 {
@@ -904,6 +914,8 @@ table
     }
 }
 
+
+
 @media screen and (max-width: 720px)
 {
     #schedule-content
@@ -939,6 +951,17 @@ table
     #men-text
     {
         font-size: 18px;
+    }
+
+    .spacing1
+    {
+        margin-bottom: 12px;
+        text-wrap: wrap;
+    }
+
+    .spacing2
+    {
+        margin-bottom: 35px;
     }
 }
 
